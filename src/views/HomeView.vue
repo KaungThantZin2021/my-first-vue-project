@@ -17,7 +17,7 @@ let doSomething = () => {
 
 
 <!-- composables -->
-<script>
+<!-- <script>
 // import flash from '@/mixins/flash'
 
 import { useFlash } from '@/composables/useFlash'
@@ -31,6 +31,13 @@ export default {
     return { flash };
   }
 }
+</script> -->
+
+<script setup>
+  import { ref } from "vue";
+  import TabbableTextarea from "@/components/TabbableTextarea.vue";
+
+  let comment = ref('test value');
 </script>
 
 <template>
@@ -46,7 +53,12 @@ export default {
     <hr> -->
 
     <!-- composables -->
-    <button @click="flash('Home Page', 'Hello form home', 'info')">Click</button>
+    <!-- <button @click="flash('Home Page', 'Hello form home', 'info')">Click</button> -->
 
+    <form>
+      <TabbableTextarea v-model="comment" style="width: 100%; height: 300px;"></TabbableTextarea>
+    </form>
   </main>
+
+
 </template>
