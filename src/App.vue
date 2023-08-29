@@ -1,4 +1,18 @@
 <script setup>
+import TeamView from "@/views/TeamView.vue"
+</script>
+
+<template>
+  <div class="grid m-2 p-2">
+    <div class="place-self-center">
+      <TeamView />
+    </div>
+  </div>
+</template>
+
+<!-- -------------- -->
+
+<!-- <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from '@/components/HelloWorld.vue'
 </script>
@@ -16,6 +30,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
         <RouterLink to="/contact">Contact</RouterLink>
         <RouterLink to="/composable">Composable</RouterLink>
         <RouterLink to="/counter">Counter</RouterLink>
+        <RouterLink to="/team">Team</RouterLink>
       </nav>
     </div>
   </header>
@@ -85,4 +100,4 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-</style>
+</style> -->
