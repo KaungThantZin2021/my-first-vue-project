@@ -1,7 +1,7 @@
 <script setup>
-defineProps({
-    team: Object
-})
+import { useTeamStore } from "@/stores/TeamStore";
+
+let team = useTeamStore();
 </script>
 <template>
   <footer class="mt-12 bg-gray-100 py-4 text-center">
